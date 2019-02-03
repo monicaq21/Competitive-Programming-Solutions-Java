@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ccc17j5 {
+public class ccc07j5 {
 	
 	static int[] a;
 	static long[] dp = new long[50];
