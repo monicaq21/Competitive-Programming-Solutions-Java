@@ -5,8 +5,7 @@ public class ccc16j3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		
-		//Hidden Palindrome
+
 		String S = sc.next();
 		int count = 0;
 		
