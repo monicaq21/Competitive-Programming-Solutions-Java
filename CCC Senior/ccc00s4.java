@@ -1,53 +1,31 @@
-package other_questions;
-
 import java.util.*;
 
 public class ccc00s4 {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		
+		int d = sc.nextInt(), n = sc.nextInt();
+		int[] dist = new int[d+1];
+		Arrays.fill(dist, 1<<30);
+		dist[0] = 0;
 
-		int d = sc.nextInt();
-		int n = sc.nextInt();
-		int[] b = new int[d+1];
-		Arrays.fill(b, Integer.MAX_VALUE);
-		b[0]=0;
 		for (int i=0; i<n; i++){
-			int k = sc.nextInt();
-			b[k] = 1;
-		}
-
-
-		for (int i=1; i<b.length; i++){
-			if (b[i]<Integer.MAX_VALUE){
-				continue;
-			} else {
-				int min = Integer.MAX_VALUE;
-				int big = (int)Math.ceil(i/2.0);
-				int small = (int)Math.floor(i/2.0);
-				while (true){
-					if (b[big]!=Integer.MAX_VALUE&&b[small]!=Integer.MAX_VALUE){
-						if (b[big]+b[small]<min){
-							min = b[big]+b[small];
-						}
-					}
-					big++;
-					small--;
-					if (small<0||big>=d){
-						break;
-					}
+			int a = sc.nextInt();
+			for (int l=0; l<d; l++){
+				if (dist[l]!=1<<30&&a+l<=d&&dist[l+a]>dist[l]+1){
+					dist[l+a] = dist[l]+1;
 				}
-				b[i] = min;
 			}
 		}
-		if (b[d]==Integer.MAX_VALUE){
-			System.out.println("Roberta acknowledges defeat.");
-		} else 
-		System.out.println("Roberta wins in "+b[d]+" strokes.");
-
-
-
+		
+		if (dist[d]==1<<30) System.out.println("Roberta acknowledges defeat.");
+		else if (dist[d]==1) System.out.println("Roberta wins in 1 stroke.");
+		else System.out.println("Roberta wins in "+dist[d]+" strokes.");
+		
+		
+		
 	}
 
 }
