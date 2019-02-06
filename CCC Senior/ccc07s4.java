@@ -9,12 +9,11 @@ public class ccc07s4 {
 		Scanner sc = new Scanner(System.in);
 		
 		int v = sc.nextInt();
-//		boolean[][] map = new boolean[v+1][v+1];
-//		LinkedList<Integer>[] map = new LinkedList<Integer>[];
 		ArrayList<Integer>[] map = new ArrayList[v];
-	    for (int i=0; i<map.length; i++){
-	    	map[i] = new ArrayList<Integer>();
-	    }
+		
+	    	for (int i=0; i<map.length; i++){
+	    		map[i] = new ArrayList<Integer>();
+	   	}
 		
 		while (true){
 			int r = sc.nextInt()-1;
