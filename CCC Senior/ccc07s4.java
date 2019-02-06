@@ -1,5 +1,3 @@
-package contest_questions;
-
 import java.util.*;
 
 public class ccc07s4 {
