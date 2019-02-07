@@ -5,7 +5,6 @@ public class ccc08s5 {
 	static boolean[][][][] dp, been;
 	
 	public static boolean win(int a, int b, int c, int d){
-		//calculate win/loose for the prev
 		if (a<0||b<0||c<0||d<0) return true;
 		else if (been[a][b][c][d]) return dp[a][b][c][d];
 		else {
