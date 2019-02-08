@@ -1,96 +1,80 @@
-package contest_questions;
-
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class ccc09s4 {
-	
-	//CORRECT but TOO SLOW
-	
-	public static class Node implements Comparable<Node>{
-		int v;	  //vertex
-		int step; //cost
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//constructor
-		public Node(int v, int steps){ 
-			this.v = v;
-			this.step = step;
+		int N = Integer.parseInt(br.readLine());
+		int T = Integer.parseInt(br.readLine());
+		int[][] trade = new int[N][N];
+		
+		for (int i=0; i<T; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int bv = Integer.parseInt(st.nextToken())-1;
+			int ev = Integer.parseInt(st.nextToken())-1;
+			int cost = Integer.parseInt(st.nextToken());
+			trade[bv][ev] = cost;
+			trade[ev][bv] = cost;
 		}
 
-		@Override
-		public int compareTo(Node o) {
-			// TODO Auto-generated method stub
-			if (this.step<o.step){
-				return -1;
-			} else if (this.step==o.step){
-				return 0;
-			} else {
-				return 1;
-			}
+		int K = Integer.parseInt(br.readLine());
+		int[] price = new int[N];
+		for (int i=0; i<K; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int n = Integer.parseInt(st.nextToken())-1;
+			price[n] = Integer.parseInt(st.nextToken());
 		}
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		
-		int N = sc.nextInt();//number of cities
-		int T = sc.nextInt();//number of trade routes
-		int[][] map = new int[N][N];
-		//input T edges and store into map
-		for (int i=0; i<T; i++){
-			int bv = sc.nextInt()-1;
-			int ev = sc.nextInt()-1;
-			int cost = sc.nextInt();
-			map[bv][ev]=cost;
-			map[ev][bv]=cost;
+
+		int D = Integer.parseInt(br.readLine())-1;
+
+		int[] step = new int[N];
+		for (int i=0; i<N; i++) {
+			step[i] = Integer.MAX_VALUE;
 		}
-		
-		int K = sc.nextInt();//how many stores
-		int[] price = new int[N]; //vertex number is index
-		for (int i=0; i<K; i++){ 
-			int V = sc.nextInt()-1;
-			price[V] = sc.nextInt();
-		}
-		
-		//destination:beginning location for dijkstra
-		int D = sc.nextInt()-1;
-		
-		//BFS Dijkstra
-		//step
-		int[] steps = new int[N];
-		Arrays.fill(steps, Integer.MAX_VALUE);
-		steps[D]=0;
-		//queue: type is Node (stores multiple values:vertex and steps/cost)
-		PriorityQueue <Node> queue = new PriorityQueue <Node>();
-		queue.add(new Node(D,steps[D]));
-		
-		while (!queue.isEmpty()){
-			Node cur = queue.poll();
-			int bv = cur.v;
-			int step = cur.step;
-			for (int ev=0; ev<N; ev++){
-				if (map[bv][ev]!=0 && steps[ev]>steps[bv]+map[bv][ev]){
-												//no longer +1: need to add cost
-					steps[ev]=steps[bv]+map[bv][ev];
-					queue.add(new Node(ev,steps[ev]));
+		step[D] = 0;
+		boolean[] vis = new boolean[N];
+		for (int i=0; i<N; i++) {
+			int min = Integer.MAX_VALUE;
+			int index = -1;
+			for (int j=0; j<N; j++) {
+				if (min>step[j] && vis[j]==false) {
+					min = step[j];
+					index = j;
 				}
 			}
+
+			vis[index] = true;
+			for (int j=0; j<N; j++) {
+				if (trade[index][j]!=0 && vis[j]==false &&
+						step[j]>step[index]+trade[index][j]) {
+					step[j]=step[index]+trade[index][j];
+				}
+			}
+
 		}
-		
-		//dijkstra finished
-		//this is only shipping fee
-		
-		//use for loop to get the minimum shipping pencil fee
 		int min = Integer.MAX_VALUE;
-		for (int i=0; i<N; i++){
-			if (price[i]!=0&&steps[i]+price[i]<min){
-				min=steps[i]+price[i];
+		for (int i=0; i<N; i++) {
+			if (price[i]!=0 && step[i]+price[i]<min) {
+				min = step[i]+price[i];
 			}
 		}
 		System.out.println(min);
-		
-		
 	}
+
+	public static class Node implements Comparable<Node>{
+		int v, step;
+		public Node(int v, int step) {
+			this.v = v;
+			this.step = step;
+		}
+		@Override
+		public int compareTo(Node o) {
+			// TODO Auto-generated method stub
+			return this.step-o.step;
+		}
+	}
+
 }
