@@ -1,5 +1,3 @@
-package contest_questions;
-
 import java.util.*;
 
 public class ccc12s5 {
@@ -7,9 +5,6 @@ public class ccc12s5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		
-		//mouse journey
-		//only move right and down
 		
 		int r = sc.nextInt();
 		int c = sc.nextInt();
