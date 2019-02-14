@@ -44,7 +44,7 @@ public class ccc05s2 {
 			System.out.println(a+" "+b);
 		}
 		
-		
+		 
 		
 	}
 
