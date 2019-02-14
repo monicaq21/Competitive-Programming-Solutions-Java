@@ -1,5 +1,3 @@
-package contest_questions;
-
 import java.util.*;
 
 public class ccc14s3 {
@@ -11,10 +9,6 @@ public class ccc14s3 {
 		
 		for (int w=0; w<t; w++){
 			int n = sc.nextInt();
-			
-			
-			//branch and mountain can happen at the same time
-			
 			Stack<Integer> branch = new Stack<Integer>(),
 					mountain = new Stack<Integer>();
 			int cur = 0;
