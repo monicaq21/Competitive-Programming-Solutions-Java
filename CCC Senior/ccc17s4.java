@@ -1,4 +1,5 @@
-package contest_questions;
+//TLE
+
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -14,20 +15,15 @@ public class ccc17s4 {
 		int bv;
 		int ev;
 		int cost;
-		int active; //set a'ctive to 0
-		//set inactive to 1
-		//only inactive pipes will add one count
-		//find how many inactive pipes in mst
+		int active;
 		@Override
 		public int compareTo(Edge o) {
 			// TODO Auto-generated method stub
-			//			return this.cost-o.cost;
 			if (this.cost<o.cost){
 				return -1;
 			} else if (this.cost>o.cost){
 				return 1;
 			} else {
-				//prioritize the active pipes
 				if (this.active<o.active){
 					return -1;
 				} else {
