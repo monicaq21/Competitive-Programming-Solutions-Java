@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p171ex6a {
+public class p171ex6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
