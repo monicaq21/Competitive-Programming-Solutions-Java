@@ -6,6 +6,7 @@ public class coci072p1 {
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		
 		int kings = sc.nextInt();
 		int queens = sc.nextInt();
 		int rooks = sc.nextInt();
