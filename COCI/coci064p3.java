@@ -8,10 +8,10 @@ public class coci064p3 {
 
 		int n = sc.nextInt();
 		int at = sc.nextInt();
+		
 		for (int i=0; i<n-1; i++){
 			int a = at;
 			int b = sc.nextInt();
-			//common denominator
 			int j=2;
 			while (true){
 				if (a%j==0&&b%j==0){
