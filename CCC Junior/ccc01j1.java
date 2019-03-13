@@ -24,17 +24,19 @@ public class ccc01j1 {
 			System.out.println("");
 		}
 		
-		for (int b=1; b<=tie; b=b+2){
-			for (int i=b; i<=tie; i++){
+		for (int b = 1; b <= tie; b = b + 2){
+			for (int i = b; i <= tie; i++){
 				System.out.print("*");
 			}
       
-			for (int i=0; i<(b-1)*2; i++){
-			System.out.print(" ");
+			for (int i = 0; i < (b - 1) * 2; i++){
+				System.out.print(" ");
 			}
-			for (int i=b; i<=tie; i++){
+			
+			for (int i = b; i <= tie; i++){
 				System.out.print("*");
 			}
+			
 			System.out.println("");
 		}
 		
