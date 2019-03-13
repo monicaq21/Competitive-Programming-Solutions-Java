@@ -7,25 +7,26 @@ public class ccc02j1 {
 		Scanner sc = new Scanner(System.in);
 		
 		int number = sc.nextInt();
-		if (number==0){
+		
+		if (number == 0){
 			System.out.println(" * * *\n*     *\n*     *\n*     *\n\n*     *\n*     *\n*     *\n * * *");
-		} else if (number==1){
+		} else if (number == 1){
 			System.out.println("\n      *\n      *\n      *\n\n      *\n      *\n      *");
-		} else if (number==2){
+		} else if (number == 2){
 			System.out.println(" * * *\n      *\n      *\n      *\n * * *\n*\n*\n*\n * * *");
-		} else if (number==3){
+		} else if (number == 3){
 			System.out.println(" * * *\n      *\n      *\n      *\n * * *\n      *\n      *\n      *\n * * *");
-		} else if (number==4){
+		} else if (number == 4){
 			System.out.println("*     *\n*     *\n*     *\n * * *\n      *\n      *\n      *");
-		} else if (number==5){
+		} else if (number == 5){
 			System.out.println(" * * *\n*\n*\n*\n * * *\n      *\n      *\n      *\n * * *");
-		} else if (number==6){
+		} else if (number == 6){
 			System.out.println(" * * *\n*\n*\n*\n * * *\n*     *\n*     *\n*     *\n * * *");
-		} else if (number==7){
+		} else if (number == 7){
 			System.out.println(" * * *\n      *\n      *\n      *\n\n      *\n      *\n      *");
-		} else if (number==8){
+		} else if (number == 8){
 			System.out.println(" * * *\n*     *\n*     *\n*     *\n * * *\n*     *\n*     *\n*     *\n * * *");
-		} else if (number==9){
+		} else if (number == 9){
 			System.out.println(" * * *\n*     *\n*     *\n*     *\n * * *\n      *\n      *\n      *\n * * *");
 		}
 		
