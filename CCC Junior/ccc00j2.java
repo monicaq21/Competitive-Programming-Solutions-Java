@@ -9,31 +9,29 @@ public class ccc00j2 {
 		int count = 0;
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		for (int i=a; i<=b; i++){
-			String s = i+"";
-			if (isRotate(s)){
-				count++;
-			}
-
-
+		
+		for (int i = a; i <= b; i++){
+			String s = i + "";
+			if (isRotated(s)) count++;
 		}
 		System.out.println(count);
 	}
 
 
-	public static boolean isRotate (String s) {
-		for (int i = 0; i<s.length(); i++){
+	public static boolean isRotated (String s) {
+		for (int i = 0; i < s.length(); i++){
 			char forward = s.charAt(i);
-			char backward = s.charAt(s.length()-1-i);
-			if (forward==backward){
-				if (forward!='0' && forward!='1' && forward!='8'){
+			char backward = s.charAt(s.length() - 1 - i);
+			
+			if (forward == backward){
+				if (forward != '0' && forward != '1' && forward != '8'){
 					return false;
 				}
-			} else if (forward!='6' && forward!='9'){
+			} else if (forward != '6' && forward != '9'){
 				return false;
-			} else if (forward=='6' && backward!='9'){
+			} else if (forward == '6' && backward != '9'){
 				return false; 
-			} else if (forward=='9' && backward!='6'){
+			} else if (forward == '9' && backward != '6'){
 				return false; 
 			} 
 		}
