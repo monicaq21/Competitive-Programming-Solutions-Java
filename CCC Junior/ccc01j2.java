@@ -6,18 +6,18 @@ public class ccc01j2 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
     
-		boolean flag = true;
+		boolean noInverse = true;
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
-		for (int i=1; i<b; i++){
-			if (((a*i)%b)==1){
+		for (int i = 1; i < b; i++){
+			if (((a * i) % b) == 1){
 				System.out.println(i);
-				flag = false;
+				noInverse = false;
 				break;
 			}
 		}
-		if (flag){
+		if (noInverse) {
 			System.out.println("No such integer exists.");
 		}
 		
