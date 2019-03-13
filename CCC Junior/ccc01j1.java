@@ -7,16 +7,20 @@ public class ccc01j1 {
 		Scanner sc = new Scanner(System.in);
 		
 		int tie = sc.nextInt();
-		for (int b=tie; b>1; b=b-2){
-			for (int i=b; i<=tie; i++){
+		
+		for (int b = tie; b > 1; b = b - 2){
+			for (int i = b; i <= tie; i++){
 				System.out.print("*");
 			}
-			for (int i=(b*2-3); i>=0; i--){
-			System.out.print(" ");
+			
+			for (int i = (b * 2 - 3); i >= 0; i--){
+				System.out.print(" ");
 			}
-			for (int i=b; i<=tie; i++){
+			
+			for (int i = b; i <= tie; i++){
 				System.out.print("*");
 			}
+			
 			System.out.println("");
 		}
 		
