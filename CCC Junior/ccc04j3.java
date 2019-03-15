@@ -9,16 +9,17 @@ public class ccc04j3 {
 		String[] adj = new String[sc.nextInt()];
 		String[] noun = new String[sc.nextInt()];
 		sc.nextLine();
-		for (int i=0; i<adj.length; i++){
-			adj[i]=sc.nextLine();
+		
+		for (int i = 0; i < adj.length; i++){
+			adj[i] = sc.nextLine();
 		}
-		for (int i=0; i<noun.length; i++){
-			noun[i]=sc.nextLine();
+		for (int i = 0; i < noun.length; i++){
+			noun[i] = sc.nextLine();
 		}
 
-		for (int i=0; i<adj.length; i++){
-			for (int l=0; l<noun.length; l++){
-				System.out.println(adj[i]+" as "+noun[l]);
+		for (int i = 0; i < adj.length; i++){
+			for (int l = 0; l < noun.length; l++){
+				System.out.println(adj[i] + " as " + noun[l]);
 			}
 		}
 
