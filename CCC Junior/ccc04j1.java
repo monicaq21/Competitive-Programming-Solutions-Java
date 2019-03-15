@@ -7,9 +7,9 @@ public class ccc04j1 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 
-		int n = (int)Math.sqrt(sc.nextInt());
-		System.out.println("The largest square has side length "+n+".");
+		int n = (int) Math.sqrt(sc.nextInt());
 		
+		System.out.println("The largest square has side length " + n + ".");
 		
 	}
 }
