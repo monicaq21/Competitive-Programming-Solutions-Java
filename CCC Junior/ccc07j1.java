@@ -10,11 +10,11 @@ public class ccc07j1 {
 				BB = sc.nextInt(),
 				CC = sc.nextInt();
 		
-		if ((AA<BB && AA>CC)||(AA<CC && AA>BB)){
+		if ((AA < BB && AA > CC) || (AA < CC && AA > BB)){
 			System.out.println(AA);
-		} else if ((BB<AA && BB>CC)||(BB<CC && BB>AA)){
+		} else if ((BB < AA && BB > CC) || (BB < CC && BB > AA)){
 			System.out.println(BB);
-		} else if ((CC<BB && CC>AA)||(CC<AA && CC>BB)){
+		} else if ((CC < BB && CC > AA) || (CC < AA && CC > BB)){
 			System.out.println(CC);
 		}
 		
