@@ -6,9 +6,8 @@ public class ccc07j2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		//!!!!!Not Done Yet!!!
+		
 		LinkedList <String> l = new LinkedList <String>();
-		//ccc07j2: I Speak TXTMSG
 
 		while (true){
 			String s = sc.nextLine();
@@ -17,7 +16,6 @@ public class ccc07j2 {
 		}
 
 		for (String k: l){
-
 			k=k.replace("CU", "see you");
 			k=k.replace(":-)", "I'm happy");
 			k=k.replace(":-(", "I'm unhappy");
