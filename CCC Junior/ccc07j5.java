@@ -8,16 +8,16 @@ public class ccc07j5 {
 	static int min, max;
 	
 	public static boolean range(int middle) {
-		return middle>=min&&middle<=max;
+		return middle >= min && middle <= max;
 	}
 	
 	public static long trip(int index, long count) {
-		if (a[index]>=7000) return 1;
+		if (a[index] >= 7000) return 1;
 		else if (been[index]) return dp[index];
 		else {
-			for (int i=index+1; i<a.length; i++) {
-				if (range(a[i]-a[index])) {
-					count += trip(i,0);
+			for (int i = index + 1; i < a.length; i++) {
+				if (range(a[i] - a[index])) {
+					count += trip(i, 0);
 				}
 			}
 		been[index] = true;
@@ -28,9 +28,11 @@ public class ccc07j5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		
 		min = sc.nextInt();
 		max = sc.nextInt();
 		int n = sc.nextInt();
+		
 		a = new int[50];
 		a[0] = 0;
 		a[1] = 990;
@@ -46,12 +48,13 @@ public class ccc07j5 {
 		a[11] = 5990;
 		a[12] = 6010;
 		a[13] = 7000;
-		for (int i=0; i<n; i++) {
-			a[14+i] = sc.nextInt();
+		
+		for (int i = 0; i < n; i++) {
+			a[14 + i] = sc.nextInt();
 		}
 		Arrays.sort(a);
 		
-		System.out.println(trip(0,0));
+		System.out.println(trip(0, 0));
 		
 	}
 }
