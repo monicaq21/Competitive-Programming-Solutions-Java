@@ -14,9 +14,10 @@ public class ccc13j2 {
 		String Z = H.replace("Z", "");
 		String X = Z.replace("X", "");
 		String N = X.replace("N", "");
-		if (N.length()>0){
+		
+		if (N.length() > 0){
 			System.out.println("NO");
-		} else if (N.length()==0){
+		} else if (N.length() == 0){
 			System.out.println("YES");
 		}
 		
