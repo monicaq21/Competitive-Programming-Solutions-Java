@@ -18,14 +18,16 @@ public class ccc16j1 {
 		String R4 = S4.replace("L", "");
 		String R5 = S5.replace("L", "");
 		String R6 = S6.replace("L", "");
-		int F = (R1.length()+R2.length()+R3.length()+R4.length()+R5.length()+R6.length());
-		if (F==0){
+		
+		int F = (R1.length() + R2.length() + R3.length() + R4.length() + R5.length() + R6.length());
+		
+		if (F == 0){
 			System.out.println("-1");
-		} else if (F==1 || F==2){
+		} else if (F == 1 || F == 2){
 			System.out.println("3");
-		} else if (F==3 || F==4){
+		} else if (F == 3 || F == 4){
 			System.out.println("2");
-		} else if (F==5 || F==6){
+		} else if (F == 5 || F == 6){
 			System.out.println("1");
 		}
 		
