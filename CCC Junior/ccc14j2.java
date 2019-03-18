@@ -4,8 +4,8 @@ public class ccc14j2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		Scanner sc = new Scanner(System.in);
+		
 		int votes = sc.nextInt();
 		sc.nextLine();
 		String results = sc.nextLine();
@@ -15,11 +15,11 @@ public class ccc14j2 {
 		int B1 = B.length();
 		
 		
-		if (A1==B1 && results.length()>0){
+		if (A1 == B1 && results.length() > 0){
 			System.out.println("Tie");
-		} else if (A1>B1){
+		} else if (A1 > B1){
 			System.out.println("A");
-		} else if (A1<B1){
+		} else if (A1 < B1){
 			System.out.println("B");
 		}
 		
