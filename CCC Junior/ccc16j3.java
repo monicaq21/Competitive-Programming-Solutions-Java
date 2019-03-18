@@ -9,16 +9,18 @@ public class ccc16j3 {
 		String S = sc.next();
 		int count = 0;
 		
-		for (int len=1; len<=S.length(); len++){
-			for (int i=0; i<S.length()-len+1; i++){
-				String s = S.substring(i,i+len);
+		for (int len = 1; len <= S.length(); len++){
+			for (int i = 0; i < S.length() - len + 1; i++){
+				String s = S.substring(i, i + len);
 				boolean flag = true;
-				for (int l=0; l<s.length(); l++){
-					if (s.charAt(l)!=s.charAt(s.length()-l-1)){
-						flag=false;
+				
+				for (int l = 0; l < s.length(); l++){
+					if (s.charAt(l) != s.charAt(s.length() - l - 1)){
+						flag = false;
 					}
 				}
-				if (flag && s.length()>count){
+				
+				if (flag && (s.length() > count)){
 					count = s.length();
 				}
 			}
