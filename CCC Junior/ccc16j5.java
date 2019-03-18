@@ -13,37 +13,36 @@ public class ccc16j5 {
 		int[] b = new int[n];
 		int c = 0;
 
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			a[i] = sc.nextInt();
 		}
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			b[i] = sc.nextInt();
 		}
+		
 		Arrays.sort(a);
 		Arrays.sort(b);
 
-		if (question==1){
-			for (int i=0; i<n; i++){
-				if (a[i]>b[i]){
-					c =c+a[i];
+		if (question == 1){
+			for (int i = 0; i < n; i++){
+				if (a[i] > b[i]){
+					c += a[i];
 				} else {
-					c =c+b[i];
+					c += b[i];
 				}
 			}
 		} else {
-			for (int i=0; i<n; i++){
-				if (a[i]>b[n-1-i]){
-					c =c+a[i];
+			for (int i = 0; i < n; i++){
+				if (a[i] > b[n - 1 - i]){
+					c += a[i];
 				} else {
-					c =c+b[n-1-i];
+					c += b[n - 1 - i];
 				}
 			}
 		}
-
 		
 		System.out.println(c);
-
-
+		
 	}
 
 }
