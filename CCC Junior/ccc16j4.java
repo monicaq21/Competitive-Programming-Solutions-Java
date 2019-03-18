@@ -13,21 +13,23 @@ public class ccc16j4 {
 		double d = 0;
 
 		while (true){
-			if (h==7||h==8||h==9||h==15||h==16||h==17||h==18){
-				d+=0.5;
-			} else{
-				d+=1;
+			if (h == 7 || h == 8 || h == 9 || h == 15 || h == 16 || h == 17 || h == 18){
+				d += 0.5;
+			} else {
+				d += 1;
 			}
-			m+=1;
-			if (m==60){
-				m=0;
+			
+			m += 1;
+			if (m == 60){
+				m = 0;
 				h++;
-				if (h==24){
-					h=0;
+				if (h == 24){
+					h = 0;
 				}
 			}
-			if (d>=120){
-				System.out.printf("%02d:%02d",h,m);
+			
+			if (d >= 120){
+				System.out.printf("%02d:%02d", h, m);
 				break;
 			}
 		}
