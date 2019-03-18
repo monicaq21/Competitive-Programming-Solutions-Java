@@ -5,8 +5,8 @@ public class ccc14j5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		Scanner sc = new Scanner(System.in);
+		
 		boolean flag = true;
 		int n = sc.nextInt();
 		sc.nextLine();
@@ -18,12 +18,12 @@ public class ccc14j5 {
 		LinkedList <String> a = new LinkedList <String>();
 		LinkedList <String> b = new LinkedList <String>();
 		
-		for (int i=0; i<B.length; i++){
+		for (int i = 0; i < B.length; i++){
 			a.add(A[i]);
 			b.add(B[i]);
 		}
 		
-		for (int i=0; i<a.size(); i++){
+		for (int i = 0; i < a.size(); i++){
 			String aa = a.get(i);
 			String bb = b.get(i);
 			if (aa.equals(bb)){
