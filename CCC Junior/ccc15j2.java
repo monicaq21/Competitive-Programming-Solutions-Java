@@ -10,13 +10,14 @@ public class ccc15j2 {
 		String happy = A.replace(":-)", "");
 		String sad = A.replace(":-(", "");
 		String all = happy.replace(":-(", "");
-		if (all.length()==A.length()){
+		
+		if (all.length() == A.length()){
 			System.out.println("none");
-		} else if (happy.length()>sad.length()){
+		} else if (happy.length() > sad.length()){
 			System.out.println("sad");
-		} else if (happy.length()<sad.length()){
+		} else if (happy.length() < sad.length()){
 			System.out.println("happy");
-		} else if (happy.length()==sad.length() && all.length()<A.length()){
+		} else if (happy.length() == sad.length() && all.length() < A.length()){
 			System.out.println("unsure");
 		}
 			
