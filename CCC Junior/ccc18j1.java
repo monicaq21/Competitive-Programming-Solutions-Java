@@ -4,7 +4,6 @@ public class ccc18j1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		Scanner sc = new Scanner(System.in);
 		
 		int one = sc.nextInt();
@@ -13,16 +12,16 @@ public class ccc18j1 {
 		int four = sc.nextInt();
 		boolean f = true;
 		
-		if (one==8||one==9){
-			if (four==8||four==9){
-				if (two==three){
+		if (one == 8 || one==9){
+			if (four == 8 || four == 9){
+				if (two == three){
 					System.out.println("ignore");
-					f=false;
+					f = false;
 				}
 			}
 		}
 		
-		if (f){
+		if (f) {
 			System.out.println("answer");
 		}
 		
