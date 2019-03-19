@@ -11,8 +11,9 @@ public class ccc17j3 {
 		int endx = sc.nextInt();
 		int endy = sc.nextInt();
 		int step = sc.nextInt();
-		int total = Math.abs(endx-startx)+Math.abs(endy-starty);
-		if (step%2 == total%2 && step>=total){
+		int total = Math.abs(endx - startx) + Math.abs(endy - starty);
+		
+		if (step % 2 == total % 2 && step >= total){
 			System.out.println("Y");
 		} else {
 			System.out.println("N");
