@@ -8,19 +8,20 @@ public class ccc04s1 {
 		
 		int n = sc.nextInt();
 		
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			boolean flag = false;
 			String a = sc.next();
 			String b = sc.next();
 			String c = sc.next();
+			
 			if (a.endsWith(b) || a.startsWith(b) || a.endsWith(c) || a.startsWith(c)){
-				flag=true;
+				flag = true;
 			}
 			if (b.endsWith(a) || b.startsWith(a) || b.endsWith(c) || b.startsWith(c)){
-				flag=true;
+				flag = true;
 			}
 			if (c.endsWith(b) || c.startsWith(b) || c.endsWith(a) || c.startsWith(a)){
-				flag=true;
+				flag = true;
 			}
 			
 			if (!flag){
