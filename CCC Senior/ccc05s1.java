@@ -9,7 +9,7 @@ public class ccc05s1 {
     
 		int n = sc.nextInt();
 		String[] s = new String[n];
-		Hashtable <Character,Integer> h = new Hashtable <Character,Integer>();
+		Hashtable <Character, Integer> h = new Hashtable <Character, Integer>();
 		
 		h.put('A', 2);
 		h.put('B', 2);
@@ -40,26 +40,28 @@ public class ccc05s1 {
 		
 		sc.nextLine();
 		
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			s[i] = sc.nextLine();
 		}
 			
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			s[i] = s[i].replace("-", "");
 			char[] k = s[i].toCharArray();
-			for (int l=0; l<k.length; l++){
-				if (l>9){
-					break;
-				}
-				if (k[l]>'9'){
+			
+			for (int l = 0; l < k.length; l++){
+				if (l > 9) break;
+				
+				if (k[l] > '9'){
 					System.out.print(h.get(k[l]));
 				} else {
 					System.out.print(k[l]);
 				}
-				if (l==2 || l==5){
+				
+				if (l == 2 || l == 5){
 					System.out.print("-");
 				}
 			}
+			
 			System.out.println();
 		}
 		
