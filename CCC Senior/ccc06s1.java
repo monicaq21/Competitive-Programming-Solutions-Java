@@ -13,25 +13,25 @@ public class ccc06s1 {
 
 		sc.nextLine();
 
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			String s = sc.nextLine();
 			char[] k = s.toCharArray();
 			boolean flag = true;
-			for (int l=0; l<5; l++){
-				if (k[l]>=65&&k[l]<=90){
-					if (!mom.contains(""+k[l])&&!dad.contains(""+k[l])){
+			
+			for (int l = 0; l < 5; l++){
+				if (k[l] >= 65 && k[l] <= 90){
+					if (!mom.contains("" + k[l]) && !dad.contains("" + k[l])){
 						System.out.println("Not their baby!");
-						flag=false;
+						flag = false;
 						break;
 					}
-				} else { //lower case: 97~122
-					if (!mom.contains(""+k[l])||!dad.contains(""+k[l])){
-						System.out.println("Not their baby!");
-						flag=false;
-						break;
-					}
+				} else if (!mom.contains("" + k[l]) || !dad.contains("" + k[l])){
+					System.out.println("Not their baby!");
+					flag = false;
+					break;
 				}
 			}
+			
 			if (flag){
 				System.out.println("Possible baby.");
 			}
