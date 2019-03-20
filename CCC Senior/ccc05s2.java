@@ -15,33 +15,33 @@ public class ccc05s2 {
 		while (true){
 			int xc = sc.nextInt();
 			int yc = sc.nextInt();
-			if (xc==0 && yc==0){
-				break;
-			} else {
-				x.add(xc);
-				y.add(yc);
-			}
+			
+			if (xc == 0 && yc == 0) break;
+			
+			x.add(xc);
+			y.add(yc);
 		}
 		
 		int a = 0;
 		int b = 0;
 		
 		while (!x.isEmpty()){
-			a+=x.pop();
-			b+=y.pop();
+			a += x.pop();
+			b += y.pop();
 			
-			if (a<0){
-				a=0;
-			} else if (a>c){
-				a=c;
-			}
-			if (b<0){
-				b=0;
-			} else if (b>r){
-				b=r;
+			if (a < 0){
+				a = 0;
+			} else if (a > c){
+				a = c;
 			}
 			
-			System.out.println(a+" "+b);
+			if (b < 0){
+				b = 0;
+			} else if (b > r){
+				b = r;
+			}
+			
+			System.out.println(a + " " + b);
 		}
 		
 		 
