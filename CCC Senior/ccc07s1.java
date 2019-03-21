@@ -10,29 +10,28 @@ public class ccc07s1 {
 		int[] y = new int[n];
 		int[] m = new int[n];
 		int[] d = new int[n];
-		for (int i=0; i<n; i++){
+		
+		for (int i = 0; i < n; i++){
 			y[i] = sc.nextInt();
 			m[i] = sc.nextInt();
 			d[i] = sc.nextInt();
-			if (2007-y[i]>18){
+			
+			if (2007 - y[i] > 18){
 				System.out.println("Yes");
-			} else if (2007-y[i]<18){
+			} else if (2007 - y[i] < 18){
 				System.out.println("No");
 			} else {
-				if (m[i]==1){
+				if (m[i] == 1){
 					System.out.println("Yes");
-				} else if (m[i]>2){
+				} else if (m[i] > 2){
 					System.out.println("No");
-				} else if (d[i]>27){
+				} else if (d[i] > 27){
 					System.out.println("No");
 				} else{
 					System.out.println("Yes");
 				}
 			}
 		}
-		
-		
-		
 		
 	}
 
