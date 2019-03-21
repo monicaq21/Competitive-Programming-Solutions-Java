@@ -14,26 +14,29 @@ public class ccc08s1 {
 		while (true){
 			String s = sc.next();
 			int n = sc.nextInt();
+			
 			if (s.equals("Waterloo")){
 				temp.add(n);
-				if (n<k){
-					k=n;
-					p=""+s;
+				if (n < k){
+					k = n;
+					p = "" + s;
 				}
 				break;
 			}
+			
 			city.add(s);
 			temp.add(n);
-			if (n<k){
-				k=n;
-				p=""+s;
+			
+			if (n < k){
+				k = n;
+				p = "" + s;
 
 			}
 
 			
 		}
-		System.out.println(p);
 		
+		System.out.println(p);
 		
 	}
 
