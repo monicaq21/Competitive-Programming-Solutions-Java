@@ -12,11 +12,11 @@ public class ccc10s2 {
 			LinkedList <String> name = new LinkedList <String>();
 			LinkedList <String> code = new LinkedList <String>();
       
-			for (int i=0; i<n; i++){
+			for (int i = 0; i < n; i++){
 				String t = sc.nextLine();
 				String[] q = t.split(" ");
-				String nam =q[0];
-				String cod =q[1];
+				String nam = q[0];
+				String cod = q[1];
 				name.add(nam);
 				code.add(cod);
 			}
@@ -24,18 +24,19 @@ public class ccc10s2 {
 			String s = sc.nextLine();
 			LinkedList <String> S = new LinkedList <String>();
 			
-			for (int i=0; i<s.length(); i++){
-				S.add(s.charAt(i)+"");
+			for (int i = 0; i < s.length(); i++){
+				S.add(s.charAt(i) + "");
 			}
 			
 			String t = "";
 			while (!S.isEmpty()){
-				t = t+""+S.poll();
+				t = t + "" + S.poll();
+				
 				if (code.contains(t)){
 					int q = code.indexOf(t);
 					String nam = name.get(q);
 					System.out.print(nam);
-					t="";
+					t = "";
 				}
 				
 			}
