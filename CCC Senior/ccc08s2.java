@@ -8,16 +8,17 @@ public class ccc08s2 {
 		
 		while (true){
 			int k = Integer.parseInt(in.readLine());
-			if (k==0){
-				break;
-			} else{
-				double pow = Math.pow(k, 2);
-				int count =0;
-				for (int x=0; x<=k; x++){
-					count += (int)Math.sqrt(pow-Math.pow(x, 2));
-				}
-				System.out.println(4*count+1);
+			if (k == 0) break;
+			
+			double pow = Math.pow(k, 2);
+			int count = 0;
+			
+			for (int x = 0; x <= k; x++){
+				count += (int) Math.sqrt(pow - Math.pow(x, 2));
 			}
+			
+			System.out.println(4 * count + 1);
+			
 		}
 	}
 
