@@ -10,13 +10,14 @@ public class ccc09s1 {
 		int b = sc.nextInt();
 		int count = 0;
 		
-		for (int i=a; i<=b; i++){
+		for (int i = a; i <= b; i++){
 			int n = i;
-			if (Math.sqrt(n)==(int)(Math.sqrt(n))&&Math.cbrt(n)==(int)(Math.cbrt(n))){
+			if (Math.sqrt(n) == (int)(Math.sqrt(n)) && Math.cbrt(n) == (int)(Math.cbrt(n))){
 				count++;
 				i++;
 			}
 		}
+		
 		System.out.println(count);
 		
 	}
