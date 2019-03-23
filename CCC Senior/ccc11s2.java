@@ -8,21 +8,25 @@ public class ccc11s2 {
 		
 		int t = sc.nextInt();
 		int count = 0;
-		char[]a = new char[t];
-		char[]b = new char[t];
-		for (int i=0; i<t; i++){
+		char[] a = new char[t];
+		char[] b = new char[t];
+		
+		for (int i = 0; i < t; i++){
 			String s = sc.next();
-			a[i]=s.charAt(0);
+			a[i] = s.charAt(0);
 		}
-		for (int i=0; i<t; i++){
+		
+		for (int i = 0; i < t; i++){
 			String s = sc.next();
-			b[i]=s.charAt(0);
+			b[i] = s.charAt(0);
 		}
-		for (int i=0; i<t; i++){
-			if (a[i]==b[i]){
+		
+		for (int i = 0; i < t; i++){
+			if (a[i] == b[i]){
 				count++;
 			}
 		}
+		
 		System.out.println(count);
 
 	}
