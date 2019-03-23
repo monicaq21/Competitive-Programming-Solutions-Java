@@ -10,33 +10,34 @@ public class ccc13s2 {
 
 		int weight = sc.nextInt();
 		int n = sc.nextInt();
-		int count = 0;
-		int w=0;
+		
 		int[] a = new int[n];
-    
-		for (int i=0; i<n; i++){
-		    int k = sc.nextInt();
-			  a[i]=k;
-		}
+		int count = 0, w = 0;
 		boolean flag = true;
-
-		for (int i=0; i<n; i++){
-			if (i<4){
-				w+=a[i];
-				if (w>weight){
+		
+		for (int i = 0; i < n; i++){
+		    int k = sc.nextInt();
+			  a[i] = k;
+		}
+		
+		for (int i = 0; i < n; i++){
+			if (i < 4){
+				w += a[i];
+				if (w > weight){
 					System.out.println(i);
-					flag=false;
+					flag = false;
 					break;
 				}
-			} else{
-				w+=a[i];
-				w-=a[i-4];
-				if (w>weight){
+			} else {
+				w += a[i];
+				w -= a[i - 4];
+				if (w > weight){
 					System.out.println(i);
-					flag=false;
+					flag = false;
 					break;
 				}
 			}
+			
 			count++;
 		}
     
