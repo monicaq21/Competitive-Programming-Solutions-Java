@@ -10,17 +10,19 @@ public class ccc11s1 {
 		int countT = 0, countS = 0;
 		sc.nextLine();
     
-		for (int i=0; i<n; i++){
+		for (int i = 0; i < n; i++){
 			String s = sc.nextLine();
 			String st = s.replace("t", "");
-			st = st.replace("T", "");
 			String ss = s.replace("s", "");
+			
+			st = st.replace("T", "");
 			ss = ss.replace("S", "");
-			countT += s.length()-st.length();
-			countS += s.length()-ss.length();
+			
+			countT += s.length() - st.length();
+			countS += s.length() - ss.length();
 		}
 		
-		if (countT<=countS) {
+		if (countT <= countS) {
 			System.out.println("French");
 		} else {
 			System.out.println("English");
