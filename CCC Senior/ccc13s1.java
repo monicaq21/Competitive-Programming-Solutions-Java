@@ -14,20 +14,22 @@ public class ccc13s1 {
 			begin++;
 			if (isD(begin)){
 				System.out.println(begin);
-						break;
-					}
+				break;
+			}
 		}
 	}
 
-	public static boolean isD(int year) {
-		String s = ""+year;
+	public static boolean isD (int year) {
+		String s = "" + year;
 		char[] a = s.toCharArray();
 		Arrays.sort(a);
-		for (int i=0; i<a.length; i++){
-			if (i!=a.length-1&&a[i]==a[i+1]){
+		
+		for (int i = 0; i < a.length; i++){
+			if (i != a.length - 1 && a[i] == a[i + 1]){
 				return false;
 			}
 		}
+		
 		return true;
 
 
