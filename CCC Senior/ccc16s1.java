@@ -8,36 +8,37 @@ public class ccc16s1 {
 
 		String A = sc.next();
 		String B = sc.next();
+		
 		LinkedList<Character> a = new LinkedList<Character>();
 		LinkedList<Character> b = new LinkedList<Character>();
-    boolean flag = true;
+    		boolean flag = true;
 
-		for (int i=0; i<A.length(); i++){
+		for (int i = 0; i < A.length(); i++){
 			a.add(A.charAt(i));
 			b.add(B.charAt(i));
 		}
 
 
-		for (int i=0; i<A.length(); i++){
+		for (int i = 0; i < A.length(); i++){
 			char c = a.get(i);
 			int index = b.indexOf(c);
-			if (index!=-1){
+			
+			if (index != -1){
 				b.remove(index);
 			} else {
 				int index2 = b.indexOf('*');
-				if (index2!=-1){
+				if (index2 != -1){
 					b.remove(index2);
-				} else{
-					flag=false;
+				} else {
+					flag = false;
 					break;
 				}
 			}
 		}
 
-
-		if (flag==false){
+		if (flag == false){
 			System.out.println("N");
-		} else{
+		} else {
 			System.out.println("A");
 		}
 
