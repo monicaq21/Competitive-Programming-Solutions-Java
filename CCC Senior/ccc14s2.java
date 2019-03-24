@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class ccc14s2 {
 
@@ -18,14 +17,15 @@ public class ccc14s2 {
 		LinkedList <String> a = new LinkedList <String>();
 		LinkedList <String> b = new LinkedList <String>();
 		
-		for (int i=0; i<B.length; i++){
+		for (int i = 0; i < B.length; i++){
 			a.add(A[i]);
 			b.add(B[i]);
 		}
 		
-		for (int i=0; i<a.size(); i++){
+		for (int i = 0; i < a.size(); i++){
 			String aa = a.get(i);
 			String bb = b.get(i);
+			
 			if (aa.equals(bb)){
 				flag = false;
 				break;
@@ -39,9 +39,8 @@ public class ccc14s2 {
 			}
 			
 		}
-
 		
-		if (flag){
+		if (flag) {
 			System.out.println("good");
 		} else {
 			System.out.println("bad");
