@@ -9,23 +9,30 @@ public class ccc15s2 {
 		
 		int j = Integer.parseInt(in.readLine()), ppl = Integer.parseInt(in.readLine());
 		String[] J = new String[j];
-		for (int i=0; i<j; i++) {
+		
+		for (int i = 0; i < j; i++) {
 			J[i] = in.readLine();
 		}
 		
 		int count = 0;
-		for (int i=0; i<ppl; i++) {
+		
+		for (int i = 0; i < ppl; i++) {
 			String[] q = in.readLine().split(" ");
 			String s = q[0];
-			int w = Integer.parseInt(q[1])-1;
-			if (s.equals("L")&&J[w].equals("L")){
-				count++; J[w] = "";
-			} else if (s.equals("M")&&(J[w].equals("M")||J[w].equals("L"))){
-				count++; J[w] = "";
-			} else if (s.equals("S")&&!J[w].equals("")) {
-				count++; J[w] = "";
+			int w = Integer.parseInt(q[1]) - 1;
+			
+			if (s.equals("L") && J[w].equals("L")){
+				count++; 
+				J[w] = "";
+			} else if (s.equals("M") && (J[w].equals("M") || J[w].equals("L"))){
+				count++; 
+				J[w] = "";
+			} else if (s.equals("S") && !J[w].equals("")) {
+				count++; 
+				J[w] = "";
 			}
 		}
+		
 		System.out.println(count);
 		
 	}
