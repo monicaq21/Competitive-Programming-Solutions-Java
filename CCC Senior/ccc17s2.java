@@ -9,19 +9,21 @@ public class ccc17s2 {
 		int n = sc.nextInt();
 		int[] q = new int[n];
     
-		for (int i=0; i<n; i++){
-			q[i]=sc.nextInt();
+		for (int i = 0; i < n; i++){
+			q[i] = sc.nextInt();
 		}
+		
 		Arrays.sort(q);
     
-		if (n%2==1){
-			System.out.print(q[n/2]+" ");
-			for (int i=n/2-1; i>=0; i--){
-				System.out.print(q[n-1-i]+" "+q[i]+" ");
+		if (n % 2 == 1){
+			System.out.print(q[n / 2] + " ");
+			
+			for (int i = n / 2 - 1; i >= 0; i--){
+				System.out.print(q[n - 1 - i] + " " + q[i] + " ");
 			}
 		} else {
-			for (int i=n/2-1; i>=0; i--){
-				System.out.print(q[i]+" "+q[n-1-i]+" ");
+			for (int i = n / 2 - 1; i >= 0; i--){
+				System.out.print(q[i] + " " + q[n - 1 - i] + " ");
 			}
 		}
 
