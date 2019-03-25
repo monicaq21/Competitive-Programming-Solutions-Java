@@ -10,17 +10,21 @@ public class ccc18s1 {
 		int n = sc.nextInt();
 		int[] a = new int[n];
 		
-		for (int i=0; i<n; i++) {
-			a[i]=sc.nextInt();
+		for (int i = 0; i < n; i++) {
+			a[i] = sc.nextInt();
 		}
+		
 		Arrays.sort(a);
+		
 		double min = 1<<30;
-		for (int i=1; i<n-1; i++) {
-			double left= (a[i]-a[i-1])/2.0;
-			double right=(a[i+1]-a[i])/2.0;
-			min = Math.min(min, left+right);
+		
+		for (int i = 1; i < n - 1; i++) {
+			double left = (a[i] - a[i - 1]) / 2.0;
+			double right = (a[i + 1] - a[i]) / 2.0;
+			min = Math.min(min, left + right);
 		}
-		System.out.printf("%.1f",min);
+		
+		System.out.printf("%.1f", min);
 		
 		
 	}
