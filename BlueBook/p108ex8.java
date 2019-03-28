@@ -8,18 +8,18 @@ public class p108ex8 {
 
 		int T = sc.nextInt();
     
-		for (int i=0; i<T; i++){
+		for (int i = 0; i < T; i++){
 			int N = sc.nextInt();
       
-			if (N>=0 && N<=45){
+			if (N >= 0 && N <= 45){
 				System.out.println("N");
-			} else if (N>=45 && N<=135){
+			} else if (N >= 45 && N <= 135){
 				System.out.println("E");
-			} else if (N>=135 && N<=225){
+			} else if (N >= 135 && N <= 225){
 				System.out.println("S");
-			} else if (N>=225 && N<=315){
+			} else if (N >= 225 && N <= 315){
 				System.out.println("W");
-			} else if (N>315){
+			} else if (N > 315){
 				System.out.println("N");
 			}
 		}
