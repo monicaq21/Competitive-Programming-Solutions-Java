@@ -8,7 +8,7 @@ public class p108ex9 {
 
 		int t = sc.nextInt();
 
-		for (int w=0; w<t; w++) {
+		for (int w = 0; w < t; w++) {
 
 			double pay = sc.nextDouble(), hours = sc.nextDouble();
 			String tax = sc.next();
