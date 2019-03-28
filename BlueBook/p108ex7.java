@@ -8,8 +8,7 @@ public class p108ex7 {
 
 		int n = sc.nextInt();
 		
-		for (int i=0; i<n; i++) {
-			
+		for (int i = 0; i < n; i++) {
 			int a = sc.nextInt();
 			
 			if (a >= 0 && a <= 30) System.out.println(38);
