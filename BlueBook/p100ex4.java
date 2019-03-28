@@ -24,8 +24,6 @@ public class p100ex4 {
 			System.out.println("invalid code");
 		}
 		
-
 	}
-
 
 }
