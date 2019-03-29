@@ -8,11 +8,14 @@ public class p124ex5 {
 
 		int n = sc.nextInt();
 		
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
+			
 			double a = sc.nextDouble();
 			int b = sc.nextInt();
-			System.out.printf("%.2f",(Math.pow(a, b)));
+			
+			System.out.printf("%.2f", (Math.pow(a, b)));
 			System.out.println();
+			
 		}
 		
 	}
