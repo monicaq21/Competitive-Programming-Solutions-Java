@@ -8,11 +8,12 @@ public class p129ex5 {
 
 		String s = sc.nextLine().toLowerCase();
 		String t = sc.nextLine().toLowerCase();
+		
 		char c = s.charAt(0);
 		int count = 0;
 		
-		for (int i=0; i<t.length(); i++) {
-			if (t.charAt(i)==c) count++;
+		for (int i = 0; i < t.length(); i++) {
+			if (t.charAt(i) == c) count++;
 		}
 		
 		System.out.println(t);
