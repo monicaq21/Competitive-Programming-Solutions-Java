@@ -10,7 +10,7 @@ public class p129ex3 {
 		
 		double least = Math.ceil(Math.log(n) / Math.log(2));
 		
-		System.out.println((int)least);
+		System.out.println((int) least);
 		
 	}
 }
