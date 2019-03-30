@@ -8,7 +8,7 @@ public class p154ex8 {
 		
 		int a = sc.nextInt();
 		
-		for (int i=1; i<=a; i++) {
+		for (int i = 1; i <= a; i++) {
 			if (a % i == 0) System.out.println(i);
 		}
 		
