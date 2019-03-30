@@ -8,8 +8,9 @@ public class p154ex6 {
 
 		double p = sc.nextDouble() / 100.0 + 1, a = sc.nextDouble(), y = sc.nextDouble(), b = sc.nextDouble();
 		
-		double n = Math.log(b/a) / Math.log(p);
-		System.out.println((int)Math.ceil(n+y));
+		double n = Math.log(b / a) / Math.log(p);
+		
+		System.out.println((int) Math.ceil(n + y));
 
 	}
 }
