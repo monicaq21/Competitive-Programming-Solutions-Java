@@ -8,14 +8,18 @@ public class p171ex6 {
     
 		int a = sc.nextInt();
 		double m = Integer.MIN_VALUE;
-		for (int i=0; i<a; i++){
+		
+		for (int i = 0; i < a; i++){
+			
 			double j = sc.nextDouble();
+			
 			if (j>m){
 				m = j;
 			}
+			
 		}
 		
-		System.out.printf("%.4f",m);
+		System.out.printf("%.4f", m);
 		
 	}
 }
