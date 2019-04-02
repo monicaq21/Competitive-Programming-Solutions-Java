@@ -9,6 +9,7 @@ public class p171ex7 {
 		int[] range = new int[6];
 		
 		while (true) {
+			
 			int a = sc.nextInt();
 			if (a == -1) break;
 			
