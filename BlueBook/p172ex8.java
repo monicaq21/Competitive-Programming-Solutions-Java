@@ -17,14 +17,16 @@ public class p172ex8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		
 		node[] a = new node[101];
-		for (int i=0; i<101; i++) {
-			a[i] = new node(i,0);
+		
+		for (int i = 0; i < 101; i++) {
+			a[i] = new node(i, 0);
 		}
 		
 		while (true) {
 			int w = sc.nextInt();
-			if (w==-1) break;
+			if (w == -1) break;
 			a[w].times++;
 		}
 		
@@ -32,16 +34,14 @@ public class p172ex8 {
 		
 		LinkedList<Integer> modes = new LinkedList<Integer>();
 		modes.add(a[100].index);
-		for (int i=99; i>=0; i--) {
-			if (a[i].times==a[i+1].times) modes.add(a[i].index);
+		
+		for (int i = 99; i >= 0; i--) {
+			if (a[i].times == a[i + 1].times) modes.add(a[i].index);
 			else break;
 		}
 		
 		Collections.sort(modes);
 		for (int i: modes) System.out.println(i);
-		
-		
-		
 		
 	}
 }
