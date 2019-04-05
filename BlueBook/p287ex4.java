@@ -10,7 +10,7 @@ public class p287ex4 {
 		int n = sc.nextInt();
 		sc.nextLine();
 		
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			String s = sc.nextLine();
 			System.out.println(find(s));
 		}
@@ -19,9 +19,14 @@ public class p287ex4 {
 	}
 	
 	public static int find(String s) {
-		for (int i=0; i<s.length(); i++) {
-			if (s.charAt(i)==' ') return (i+1);
+		
+		for (int i = 0; i < s.length(); i++) {
+			
+			if (s.charAt(i) == ' ') return (i + 1);
+			
 		}
+		
 		return 0;
+		
 	}
 }
