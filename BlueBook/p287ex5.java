@@ -8,13 +8,18 @@ public class p287ex5 {
 
 		int A = sc.nextInt();
 		int[] b = new int[A];
+		
 		sc.nextLine();
-		for (int i=0; i<A; i++){
+		
+		for (int i = 0; i < A; i++){
+			
 			String S = sc.nextLine();
 			S = S.replace("-", "");
 			b[i] = S.length();
+			
 		}
-		for (int i=0; i<A; i++){
+		
+		for (int i = 0; i < A; i++){
 			System.out.println(b[i]);
 		}
 
