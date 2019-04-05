@@ -8,15 +8,19 @@ public class p287ex3 {
     
 		int a = sc.nextInt();
 		double m = 10001;
-		for (int i=0; i<a; i++){
+		
+		for (int i = 0; i < a; i++){
+			
 			double j = sc.nextDouble();
-			if (j<m){
+			
+			if (j < m){
 				m = j;
 			}
+			
 		}
 		
 		
-		System.out.printf("%.2f",m);
+		System.out.printf("%.2f", m);
 		
 		
 		
