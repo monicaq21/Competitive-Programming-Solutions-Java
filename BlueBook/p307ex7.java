@@ -9,20 +9,23 @@ public class p307ex7 {
 		int a = sc.nextInt();
 
 		for (int i = 0; i<a; i++){
+			
 			int b = sc.nextInt();
-			if (b<=100 && b>=80){
+			
+			if (b <= 100 && b >= 80){
 				System.out.println("A");
-			} else if (b<=79 && b>=70){
+			} else if (b <= 79 && b >= 70){
 				System.out.println("B");
-			} else if (b<=69 && b>=60){
+			} else if (b <= 69 && b >= 60){
 				System.out.println("C");
-			} else if (b<=59 && b>=50){
+			} else if (b <= 59 && b >= 50){
 				System.out.println("D");
-			} else if (b<=49 && b>=0){
+			} else if (b <= 49 && b >= 0){
 				System.out.println("F");
 			} else {
 				System.out.println("X");
 			}
+			
 		}
 		
 		
