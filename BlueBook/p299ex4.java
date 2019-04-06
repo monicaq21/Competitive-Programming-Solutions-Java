@@ -9,22 +9,26 @@ public class p299ex4 {
 
 		int n = sc.nextInt();
 		
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
+			
 			int a = sc.nextInt();
-			if (a==1) System.out.println(0);
-			else if (a==2) System.out.println(1);
+			
+			if (a == 1) System.out.println(0);
+			else if (a == 2) System.out.println(1);
 			else if (isPrime(a)) System.out.println(1);
 			else System.out.println(0);
+			
 		}
-		
-		
 		
 	}
 	
 	public static boolean isPrime(int a) {
-		for (int i=2; i<=Math.ceil(Math.sqrt(a)); i++) {
-			if (a%i==0) return false;
+		
+		for (int i = 2; i <= Math.ceil(Math.sqrt(a)); i++) {
+			if (a % i == 0) return false;
 		}
+		
 		return true;
+		
 	}
 }
