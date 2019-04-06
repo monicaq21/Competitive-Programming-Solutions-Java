@@ -8,8 +8,10 @@ public class p307ex10 {
 
 		int t = sc.nextInt();
 		
-		for (int w=0; w<t; w++) {
+		for (int w = 0; w < t; w++) {
+			
 			int y = sc.nextInt(), m = sc.nextInt(), d = sc.nextInt();
+			
 			int ans = 0;
 			
 			switch (m) {
