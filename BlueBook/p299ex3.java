@@ -7,7 +7,8 @@ public class p299ex3 {
 		Scanner sc = new Scanner(System.in);
 
 		int A = sc.nextInt();
-		for (int i=0; i<A; i++){
+
+		for (int i = 0; i < A; i++){
 			String S = sc.next();
 			System.out.println(S.toLowerCase());
 		}
