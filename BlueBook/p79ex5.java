@@ -9,7 +9,7 @@ public class p79ex5 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
-		if (a%b==0){
+		if (a % b == 0){
 			System.out.println("yes");
 		} else {
 			System.out.println("no");
