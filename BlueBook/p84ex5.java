@@ -9,13 +9,13 @@ public class p84ex5 {
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 		
-		if (b==0 && a==0){
+		if (b == 0 && a == 0){
 			System.out.println("indeterminate");
-		} else if (a==0){
+		} else if (a == 0){
 			System.out.println("undefined");
 		} else {
-			double c = -b/a;
-			System.out.printf("%.2f",c);
+			double c = - b / a;
+			System.out.printf("%.2f", c);
 		}
 		
 	}
