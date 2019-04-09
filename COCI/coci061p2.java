@@ -9,8 +9,8 @@ public class coci061p2 {
 		
 		int r = sc.nextInt();
 		
-		System.out.println(r*r*Math.PI);
-		System.out.println(r*r*2.0);
+		System.out.println(r * r * Math.PI);
+		System.out.println(r * r * 2.0);
 		
 	}
 }
