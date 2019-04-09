@@ -9,8 +9,8 @@ public class coci061p1 {
 		
 		ArrayList<Integer> k = new ArrayList<Integer>();
 		
-		for (int i=0; i<10; i++) {
-			int a = sc.nextInt()%42;
+		for (int i = 0; i < 10; i++) {
+			int a = sc.nextInt() % 42;
 			if (!k.contains(a)) k.add(a);
 		}
 		
