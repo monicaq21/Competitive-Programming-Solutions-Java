@@ -10,18 +10,23 @@ public class coci073p1 {
 		int n = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		int[] a = {n,b,c};
+		
+		int[] a = {n, b, c};
 		Arrays.sort(a);
 		
-		if (a[1]-a[0]==a[2]-a[1]) {
-			System.out.println(a[2]+a[2]-a[1]);
-		} else if (a[1]-a[0]>a[2]-a[1]) {
-			System.out.println(a[0]+a[2]-a[1]);
+		if (a[1] - a[0] == a[2]-a[1]) {
+			
+			System.out.println(a[2] + a[2] - a[1]);
+			
+		} else if (a[1] - a[0] > a[2] - a[1]) {
+			
+			System.out.println(a[0] + a[2] - a[1]);
+			
 		} else {
-			System.out.println(a[1]+a[1]-a[0]);
+			
+			System.out.println(a[1] + a[1] - a[0]);
+			
 		}
-		
-		
 		
 	}
 }
