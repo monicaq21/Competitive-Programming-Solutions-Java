@@ -8,26 +8,29 @@ public class coci074p1 {
 		
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		int first = a+b;
+		int first = a + b;
     
 		int c = sc.nextInt();
 		int d = sc.nextInt();
-		int second = c+d;
+		int second = c + d;
     
     
-		for (int i=0; i<3; i++){
+		for (int i = 0; i < 3; i++){
+			
 			int n = sc.nextInt();
 			boolean flag = false;
 			boolean flag2 = false;
-			if (n%first<=a&&n%first!=0){
+			
+			if (n % first <= a && n % first != 0){
 				flag = true;
 			}
-			if (n%second<=c&&n%second!=0){
+			if (n % second <= c && n % second != 0){
 				flag2 = true;
 			}
-			if (flag&&flag2){
+			
+			if (flag && flag2){
 				System.out.println("both");
-			} else if (flag||flag2){
+			} else if (flag || flag2){
 				System.out.println("one");
 			} else {
 				System.out.println("none");
