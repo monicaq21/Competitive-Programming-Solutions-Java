@@ -14,7 +14,8 @@ public class coci072p1 {
 		int knights = sc.nextInt();
 		int pawns = sc.nextInt();
 		
-		System.out.println((1-kings)+" "+(1-queens)+" "+(2-rooks)+" "+(2-bishops)+" "+(2-knights)+" "+(8-pawns));
+		System.out.println((1 - kings) + " " + (1 - queens) + " " + (2 - rooks) + " " + 
+				   (2 - bishops) + " " + (2 - knights) + " " + (8 - pawns));
 		
 		
 	}
