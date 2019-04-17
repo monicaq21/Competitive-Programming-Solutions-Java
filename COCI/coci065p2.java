@@ -20,52 +20,53 @@ public class coci065p2 {
 		int em = Integer.parseInt(B[1]);
 		int es = Integer.parseInt(B[2]);
 
-		if (ch==eh&&cm==em&&cs==es){
+		if (ch == eh && cm == em && cs == es){
 			System.out.println("24:00:00");
 			return;
 		}
     
-		if (!smaller(ch,cm,cs,eh,em,es)){
-			eh+=24;
+		if (!smaller(ch, cm, cs, eh, em, es)){
+			eh += 24;
 		}
 		
-		if (es<cs){
-			es+=60;
+		if (es < cs){
+			es += 60;
 			em--;
 		}
     
-		int s = es-cs;
+		int s = es - cs;
     
-		if (em<cm){
-			em+=60;
+		if (em < cm){
+			em += 60;
 			eh--;
 		}
     
-		int m = em-cm;
-		int h = eh-ch;
-		System.out.printf("%02d:%02d:%02d", h,m,s);
-
-
-
+		int m = em - cm;
+		int h = eh - ch;
+		System.out.printf("%02d:%02d:%02d", h, m, s);
 
 	}
 
 	public static boolean smaller(int ch, int cm, int cs, int eh, int em, int es){
-		if (eh>ch){
+		
+		if (eh > ch){
 			return true;
-		} else if (eh<ch){
+		} else if (eh < ch){
 			return false;
 		}
-		if (em>cm){
+		
+		if (em > cm){
 			return true;
-		} else if (em<cm){
+		} else if (em < cm){
 			return false;
 		}
-		if (es>cs){
+		
+		if (es > cs){
 			return true;
 		} else {
 			return false;
 		}
+		
 	}
 
 }
