@@ -9,22 +9,28 @@ public class coci064p3 {
 		int n = sc.nextInt();
 		int at = sc.nextInt();
 		
-		for (int i=0; i<n-1; i++){
+		for (int i = 0; i < n - 1; i++){
+			
 			int a = at;
 			int b = sc.nextInt();
-			int j=2;
+			int j = 2;
+			
 			while (true){
-				if (a%j==0&&b%j==0){
-					a/=j;
-					b/=j;
+				
+				if (a % j == 0 && b % j == 0){
+					a /= j;
+					b /= j;
 					continue;
 				}
+				
 				j++;
-				if (b==1||j>a||j>b){
+				if (b == 1 || j > a || j > b){
 					break;
 				}
+				
 			}
-			System.out.println(a+"/"+b);
+			
+			System.out.println(a + "/" + b);
 		}
 	}
 
