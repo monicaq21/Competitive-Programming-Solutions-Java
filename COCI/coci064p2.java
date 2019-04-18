@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class coci064p2 {
 
-
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		
 		int r = sc.nextInt();
 		int c = sc.nextInt();
 		int zr = sc.nextInt();
@@ -30,6 +30,7 @@ public class coci064p2 {
 						System.out.print(a[i][l]);
 					}
 				}
+				
 				System.out.println();
 			}
 		}
