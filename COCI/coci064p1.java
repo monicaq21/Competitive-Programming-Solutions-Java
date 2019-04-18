@@ -11,17 +11,18 @@ public class coci064p1 {
 		int x = sc.nextInt();
 		int y = sc.nextInt();
     
-		double max = Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+		double max = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
 		
 		for (int i=0; i<n; i++){
+			
 			int a = sc.nextInt();
       
-			if (a<=max){
+			if (a <= max){
 				System.out.println("DA");
 			} else {
 				System.out.println("NE");
 			}
-      
+
 		}
 	}
 }
