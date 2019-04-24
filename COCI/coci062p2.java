@@ -12,57 +12,37 @@ public class coci062p2 {
     
 		String s = sc.nextLine();
 		
-    int[] n = {o,p,op};
+    		int[] n = {o,p,op};
 		
-    Arrays.sort(n);
+    		Arrays.sort(n);
 		
-		if (s.charAt(0)=='C'){
-			
-      System.out.print(n[2]);
+		if (s.charAt(0) == 'C'){
+      			System.out.print(n[2]);
+    		} else if (s.charAt(0) == 'B'){
+      			System.out.print(n[1]);
+    		} else {
+      			System.out.print(n[0]);
+    		}
 		
-    } else if (s.charAt(0)=='B'){
-			
-      System.out.print(n[1]);
+    		System.out.print(" ");
 		
-    } else{
-			
-      System.out.print(n[0]);
+		if (s.charAt(1) == 'C'){
+      			System.out.print(n[2]);
+    		} else if (s.charAt(1) == 'B'){
+      			System.out.print(n[1]);
+    		} else {
+      			System.out.print(n[0]);
+    		}
 		
-    }
+    		System.out.print(" ");
 		
-    System.out.print(" ");
-		
-    
-		if (s.charAt(1)=='C'){
-			
-      System.out.print(n[2]);
-		
-    } else if (s.charAt(1)=='B'){
-			
-      System.out.print(n[1]);
-		
-    } else{
-			
-      System.out.print(n[0]);
-		
-    }
-		
-    System.out.print(" ");
-		
-    
-		if (s.charAt(2)=='C'){
-			
-      System.out.print(n[2]);
-		
-    } else if (s.charAt(2)=='B'){
-			
-      System.out.print(n[1]);
-		
-    } else{
-			
-      System.out.print(n[0]);
-		
-    }
+		if (s.charAt(2) == 'C'){
+      			System.out.print(n[2]);
+    		} else if (s.charAt(2) == 'B'){
+      			System.out.print(n[1]);
+    		} else {
+      			System.out.print(n[0]);
+    		}
 		
 	}
 }
