@@ -7,6 +7,7 @@ public class wc151j1 {
 		Scanner sc = new Scanner(System.in);
 		
 		String s = "REDBLUEWHITE";
+		
 		for (int i=0; i<2; i++){
 			String k = sc.nextLine();
 			s = s.replace(k, "");
