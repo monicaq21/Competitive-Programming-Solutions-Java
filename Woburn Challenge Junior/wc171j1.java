@@ -10,8 +10,5 @@ public class wc171j1 {
 		System.out.print(s);
 		System.out.print(", eh");
 		
-		
-		
 	}
-
 }
