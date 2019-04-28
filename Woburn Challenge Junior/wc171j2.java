@@ -7,7 +7,7 @@ public class wc171j2 {
 		Scanner sc = new Scanner(System.in);
 		
 		int c = sc.nextInt();
-		int f = 9*c/5+32;
+		int f = 9 * c / 5 + 32;
 		
 		System.out.println(f);
 		
