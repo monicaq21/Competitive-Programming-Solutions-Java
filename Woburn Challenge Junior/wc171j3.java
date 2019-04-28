@@ -6,30 +6,30 @@ public class wc171j3 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
     
-		int apoint = 0;
-		int bpoint = 0;
+		int aPoint = 0;
+		int bPoint = 0;
 		
 		int[] a = new int[7];
 		int[] b = new int[7];
 		
 		for (int i=0; i<7; i++){
-			a[i]=sc.nextInt();
-			b[i]=sc.nextInt();
+			a[i] = sc.nextInt();
+			b[i] = sc.nextInt();
 		}
 		
 		for (int i=0; i<7; i++){
-			if (a[i]>b[i]){
-				apoint++;
+			if (a[i] > b[i]){
+				aPoint++;
 			} else{
-				bpoint++;
+				bPoint++;
 			}
-			if (apoint==4 || bpoint==4){
+			if (aPoint == 4 || bPoint == 4){
 				break;
 			}
 			
 		}
 		
-		System.out.println(apoint+" "+bpoint);
+		System.out.println(aPoint + " " + bPoint);
 		
 		
 	}
