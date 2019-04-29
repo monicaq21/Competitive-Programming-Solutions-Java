@@ -10,7 +10,7 @@ public class Solution {
     
 		int a = sc.nextInt(), b = sc.nextInt();
     
-		pw.println(a+b);
+		pw.println(a + b);
     
 		pw.close();
 
