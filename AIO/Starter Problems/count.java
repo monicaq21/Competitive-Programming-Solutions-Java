@@ -10,7 +10,7 @@ public class Solution {
 		
 		int n = sc.nextInt();
 		
-		for (int i = 1; i <= n; i++) pw.println(i);
+		for (int i=1; i<=n; i++) pw.println(i);
 		
 		pw.close();
 
