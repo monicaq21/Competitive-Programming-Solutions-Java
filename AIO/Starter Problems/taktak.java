@@ -12,7 +12,6 @@ public class Solution {
 		int times = 0;
 		
 		while (true) {
-    
 			if ((n - 1) % 11 == 0) {
 				pw.print(times + " " + n);
 				break;
@@ -20,7 +19,6 @@ public class Solution {
 			
 			n *= 2;
 			times++;
-			
 		}
 		
 		pw.close();
