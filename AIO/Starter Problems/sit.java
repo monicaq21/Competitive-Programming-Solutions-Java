@@ -11,7 +11,7 @@ public class Solution {
 		int a = sc.nextInt(), b = sc.nextInt(), total = sc.nextInt();
     
 		if (total <= a * b) pw.print(total + " " + 0);
-		else pw.print((a * b) + " " + (total - a * b));
+		else pw.print((a*b) + " " + (total - a*b));
     
 		pw.close();
 
