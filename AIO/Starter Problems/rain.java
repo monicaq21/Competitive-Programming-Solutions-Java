@@ -8,7 +8,10 @@ public class Solution {
 		Scanner sc = new Scanner(new File("rainin.txt"));
 		PrintWriter pw = new PrintWriter(new File("rainout.txt"));
 		
-		int n = sc.nextInt(), c = sc.nextInt(), cur = 0, index = -1;
+		int n = sc.nextInt();
+		int c = sc.nextInt();
+		int cur = 0;
+		int index = -1;
 		
 		for (int i = 0; i < n; i++) {
 			cur += sc.nextInt();
