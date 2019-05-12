@@ -8,7 +8,8 @@ public class Solution {
 		Scanner sc = new Scanner(new File("mixin.txt"));
 		PrintWriter pw = new PrintWriter(new File("mixout.txt"));
 		
-		int a = sc.nextInt(), b = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
     
 		if (a % b == 0) pw.print(a / b);
 		else {
