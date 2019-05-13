@@ -18,7 +18,6 @@ public class Solution {
 		}
 		
 		pw.println(min + " " + max + " " + (sum / n));
-		
 		pw.close();
 
 	}
